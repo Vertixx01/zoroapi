@@ -108,7 +108,9 @@ def get_genre(genre, page):
 
 @app.get("/")
 def read_root():
-    return "<p>Hello, World!</p>"
+    return {
+        "Usage": "Go to /endpoints to see all endpoints",
+    }
 
 @app.get("/endpoints")
 def read_endpoints():
